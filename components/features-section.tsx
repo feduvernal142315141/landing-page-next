@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function FeaturesSection() {
   return (
     <section className="py-20 bg-gray-50">
@@ -11,9 +13,11 @@ export function FeaturesSection() {
               <strong>Next.js</strong>, <strong>Astro</strong> y muchas más para ofrecer experiencias rápidas,
               escalables y fáciles de mantener.
             </p>
-            <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition-colors">
-              Contacta con nosotros
-            </button>
+            <Link href="/contacto">
+              <button className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-full transition-colors cursor-pointer">
+                Contacta con nosotros
+              </button>
+            </Link>
           </div>
         </div>
 

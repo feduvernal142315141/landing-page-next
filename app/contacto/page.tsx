@@ -140,8 +140,9 @@ export default function ContactoPage() {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-card-foreground">Email</h3>
-                      <p className="text-muted-foreground">contacto@kodewave.com</p>
+                      <h3 className="font-semibold text-card-foreground">Emails</h3>
+                      <p className="text-muted-foreground">feduvernal@kodewave-solutions.com</p>
+                      <p className="text-muted-foreground">jorge.mancha@kodewave-solutions.com</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -152,8 +153,9 @@ export default function ContactoPage() {
                       <Phone className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-card-foreground">Teléfono</h3>
-                      <p className="text-muted-foreground">+34 900 123 456</p>
+                      <h3 className="font-semibold text-card-foreground">Teléfonos</h3>
+                      <p className="text-muted-foreground">+505 8285 1270</p>
+                      <p className="text-muted-foreground">+505 7862 7699</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -165,7 +167,7 @@ export default function ContactoPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-card-foreground">Ubicación</h3>
-                      <p className="text-muted-foreground">Madrid, España</p>
+                      <p className="text-muted-foreground">Managua, Nicaragua</p>
                     </div>
                   </CardContent>
                 </Card>

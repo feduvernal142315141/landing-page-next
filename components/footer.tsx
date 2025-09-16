@@ -114,7 +114,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-700">
-          <p className="text-center text-gray-300">© 2024 KODEWAVE SOLUTIONS. Todos los derechos reservados.</p>
+          <p className="text-center text-gray-300">© 2025 KODEWAVE SOLUTIONS. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

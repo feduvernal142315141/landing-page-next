@@ -16,7 +16,7 @@ export function HeroSection() {
       <div
         className="absolute bottom-0 left-0 right-0 h-20 bg-white"
         style={{
-          clipPath: "ellipse(100% 100% at 50% 100%)",
+           clipPath: "polygon(0 0, 50% 100%, 100% 0, 100% 100%, 0 100%)",
         }}
       ></div>
 
@@ -32,7 +32,7 @@ export function HeroSection() {
         <Link href="/contacto">
           <Button
             size="lg"
-            className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 text-lg rounded-full"
+            className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-4 text-lg rounded-full cursor-pointer"
           >
             HABLEMOS DE TU FUTURA WEB
           </Button>
