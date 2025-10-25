@@ -1,0 +1,424 @@
+{
+  "navbar": {
+    "services": "Services",
+    "cases": "Cases",
+    "demos": "Demos",
+    "resources": "Resources",
+    "about": "About",
+    "faq": "FAQ",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "menu": "Menu",
+    "language": "Language",
+    "poweredBy": "Powered by",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Web Development Experts that Convert",
+    "subtitle": "Custom sites and apps focused on business, performance, and user experience.",
+    "ctaPrimary": "Let's talk about your project",
+    "ctaSecondary": "View demos in 1 minute",
+    "feature1": "On-time delivery",
+    "feature2": "Close support",
+    "feature3": "React • Next.js • Tailwind"
+  },
+  "trustBar": {
+    "title": "Technologies we trust"
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Solutions that load fast and sell more",
+    "custom": {
+      "title": "Custom sites with Next.js",
+      "description": "Personalized development with the latest technologies",
+      "bullet1": "Scalable architecture",
+      "bullet2": "Optimized SEO"
+    },
+    "ecommerce": {
+      "title": "Stores and catalogs with WhatsApp integration",
+      "description": "Connected e-commerce solutions",
+      "bullet1": "Simplified checkout",
+      "bullet2": "WhatsApp integration"
+    },
+    "landing": {
+      "title": "High-performance landing pages",
+      "description": "Pages optimized for conversion",
+      "bullet1": "Ultra-fast loading",
+      "bullet2": "Persuasive design"
+    },
+    "apps": {
+      "title": "Internal web apps (dashboards/CRM)",
+      "description": "Custom business tools",
+      "bullet1": "Intuitive interfaces",
+      "bullet2": "Real-time data"
+    },
+    "branding": {
+      "title": "Branding and UI/UX",
+      "description": "Brand design and user experience",
+      "bullet1": "Visual identity",
+      "bullet2": "Memorable experience"
+    },
+    "support": {
+      "title": "Support and maintenance",
+      "description": "Continuous support for your project",
+      "bullet1": "Regular updates",
+      "bullet2": "Priority support"
+    },
+    "cta": "Request quote via WhatsApp"
+  },
+  "features": {
+     "title": "EXPERTS IN CUSTOM WEB DEVELOPMENT",
+    "description": "Does your website truly reflect what your business needs? At KodeWave, we create modern, customized web solutions tailored to your goals. We use technologies like React.js, Next.js, Astro, and more to deliver fast, scalable, and easy-to-maintain experiences.",
+    "contactButton": "Contact us",
+    "questionTitle": "WHAT TYPE OF WEB DEVELOPMENT DO YOU NEED?",
+    "react": {
+      "title": "Modern applications with React",
+      "description": "We create interactive and dynamic interfaces with React, the most popular library for modern web development.",
+      "benefit1": "Reusable components",
+      "benefit2": "Optimized performance",
+      "benefit3": "Robust ecosystem",
+      "cta": "I want a modern app with React"
+    },
+    "nextjs": {
+      "title": "Fast sites with Next.js",
+      "description": "We develop ultra-fast websites with Next.js, the React framework for production.",
+      "benefit1": "Optimized SEO",
+      "benefit2": "Instant loading",
+      "benefit3": "Guaranteed scalability",
+      "cta": "I want a fast site with Next.js"
+    },
+    "astro": {
+      "title": "Lightweight webs with Astro",
+      "description": "We build extremely fast websites with Astro, the modern framework for content.",
+      "benefit1": "Ultra-fast loading",
+      "benefit2": "Exceptional SEO",
+      "benefit3": "Less JavaScript",
+      "cta": "I want a lightweight web with Astro"
+    },
+    "tailwind": {
+      "title": "Modern design with Tailwind CSS",
+      "description": "We design elegant and responsive interfaces with Tailwind CSS, the most popular utility framework.",
+      "benefit1": "Consistent design",
+      "benefit2": "Agile development",
+      "benefit3": "Fully customizable",
+      "cta": "I want a modern design with Tailwind"
+    }
+  },
+  "projectPhases": {
+    "title": "Web project phases",
+    "subtitle": "A simple process, solid results",
+    "phase1": {
+      "title": "Discovery",
+      "description": "30 min via WhatsApp or call to understand your business and goals"
+    },
+    "phase2": {
+      "title": "Proposal and roadmap",
+      "description": "Detailed roadmap and budget in 24-48 hours"
+    },
+    "phase3": {
+      "title": "Design + Development",
+      "description": "Short iterations with continuous feedback and partial deliveries"
+    },
+    "phase4": {
+      "title": "Delivery + Metrics + Support",
+      "description": "Optimized launch with results tracking and continuous support"
+    },
+    "phase5": {
+      "title": "Mobile Optimization",
+      "description": "Perfect responsive design on all devices"
+    },
+    "phase6": {
+      "title": "Security and Performance",
+      "description": "Complete security audit and speed optimization"
+    },
+    "phase7": {
+      "title": "Continuous Maintenance",
+      "description": "Regular updates and permanent technical support"
+    }
+  },
+  "casos": {
+    "title": "Success Stories: Results that speak for themselves",
+    "subtitle": "Each project is a different story. These are some companies and professionals who trusted KodeWave to transform their digital presence.",
+    "category": {
+      "health": "Health",
+      "ecommerce": "E-commerce",
+      "services": "Services"
+    },
+    "dental": {
+      "name": "SmileCare Dental Clinic",
+      "challenge": "They needed a faster and easier-to-use website to increase online appointments.",
+      "solution": "We migrated to Next.js and optimized local SEO with schema markup and strategic content.",
+      "result": "+42% leads",
+      "metric1": "LCP 1.8s",
+      "metric2": "PageSpeed 98",
+      "metric3": "+42% conversions"
+    },
+    "electronics": {
+      "name": "Electro Plus Store",
+      "challenge": "High cart abandonment and confusing mobile shopping experience.",
+      "solution": "We redesigned the checkout flow, integrated WhatsApp, and optimized images.",
+      "result": "+63% sales",
+      "metric1": "-35% abandonment",
+      "metric2": "Mobile-first",
+      "metric3": "+63% conversions"
+    },
+    "law": {
+      "name": "Martínez Legal Consulting",
+      "challenge": "Outdated site that didn't generate trust or inquiries.",
+      "solution": "Professional landing with success stories, verified testimonials, and optimized form.",
+      "result": "+78% inquiries",
+      "metric1": "Bounce -45%",
+      "metric2": "Time +2.3min",
+      "metric3": "+78% leads"
+    },
+    "ctaQuestion": "Want results like these for your business?",
+    "ctaButton": "Let's talk about your project",
+    "requestSimilar": "Request similar",
+    "viewDetails": "View details"
+  },
+  "demos": {
+    "title": "Interactive Demos: Designs ready to inspire you",
+    "subtitle": "Explore our base sites for different types of businesses. If one fits you, we adapt it to your brand in a few days.",
+    "categories": {
+      "all": "All",
+      "pymes": "SMEs",
+      "clinics": "Clinics",
+      "professionals": "Professionals",
+      "stores": "Stores",
+      "startups": "Startups",
+      "education": "Education"
+    },
+    "items": {
+      "dental": "Landing for Dental Clinic",
+      "electronics": "Electronics Store",
+      "lawyer": "Legal Consultant Landing",
+      "restaurant": "Restaurant Site",
+      "education": "Educational Platform",
+      "saas": "Landing for SaaS Startup",
+      "stores": "App Online Store",
+      "professionals": "Landing for Independent Professional"
+    },
+    "viewDemo": "View Live Demo",
+    "requestDesign": "Request this design",
+    "ctaQuestion": "Can't find what you're looking for? We create custom designs.",
+    "ctaButton": "Request custom design"
+  },
+  "recursos": {
+    "title": "Resources and Guides to Boost Your Digital Business",
+    "subtitle": "Learn about development, design, digital marketing, and modern tools. We believe shared knowledge builds trust.",
+    "types": {
+      "article": "Article",
+      "guide": "Guide",
+      "download": "Download"
+    },
+    "article1": {
+      "title": "Why your website should load in less than 2 seconds",
+      "description": "Discover how speed impacts conversions and SEO, with real examples and tools.",
+      "time": "5 min"
+    },
+    "article2": {
+      "title": "How to connect WhatsApp Business with your landing",
+      "description": "Step by step to integrate WhatsApp and increase your hot leads from day one.",
+      "time": "8 min"
+    },
+    "article3": {
+      "title": "Checklist: Professional website launch",
+      "description": "Free PDF with 47 checkpoints before publishing your website.",
+      "time": "PDF"
+    },
+    "readNow": "Read now",
+    "downloadFree": "Download free",
+    "newsletter": {
+      "title": "Receive monthly tips to improve your website",
+      "subtitle": "Join our newsletter and receive exclusive guides, case studies, and web development tips straight to your inbox.",
+      "placeholder": "your@email.com",
+      "button": "Subscribe"
+    }
+  },
+  "about": {
+    "title": "We are KodeWave Solutions",
+    "subtitle": "We create software, we build trust. Our mission is for every business, regardless of size, to have a digital presence that inspires, sells, and evolves.",
+    "vision": {
+      "title": "Our Vision",
+      "paragraph1": "We help entrepreneurs, clinics, and companies transform their ideas into functional digital solutions. We focus on technical quality, user experience, and real impact on every project.",
+      "paragraph2": "We don't sell generic templates. Each project is unique, designed and developed specifically for your business goals."
+    },
+    "values": {
+      "transparency": {
+        "title": "Transparency",
+        "description": "Clear communication at every stage of the project"
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "description": "We deliver fast results without sacrificing quality"
+      },
+      "purpose": {
+        "title": "Design with purpose",
+        "description": "Every pixel has a reason to be"
+      },
+      "support": {
+        "title": "Continuous support",
+        "description": "We're with you after launch"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "member1": {
+        "name": "Frank Hernández",
+        "role": "Technical Director / Senior Developer",
+        "specialty": "Specialist in React, Next.js and scalable architectures"
+      },
+      "member2": {
+        "name": "María González",
+        "role": "Lead UX/UI Designer",
+        "specialty": "Expert in user-centered design and conversion"
+      },
+      "member3": {
+        "name": "Carlos Ramírez",
+        "role": "Full Stack Developer",
+        "specialty": "Specialist in APIs, databases and optimization"
+      }
+    },
+    "cta": {
+      "title": "Want to work with us?",
+      "subtitle": "We're ready to hear your project and help you make it a reality. No commitments, no pressure.",
+      "whatsapp": "Let's talk on WhatsApp",
+      "call": "Schedule a 15-minute call"
+    },
+    "ctaButton": "Let's talk about your idea"
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Real results from real businesses",
+    "verified": "Verified",
+    "testimonial1": {
+      "name": "María González",
+      "role": "CEO, TechStart",
+      "text": "We went from a slow site to a landing that converted 2.3× more in 30 days. The team is exceptional."
+    },
+    "testimonial2": {
+      "name": "Carlos Ruiz",
+      "role": "Director, Health Clinic",
+      "text": "WhatsApp integration changed our business. Now we receive inquiries 24/7 automatically."
+    },
+    "testimonial3": {
+      "name": "Ana Martínez",
+      "role": "Founder, Online Boutique",
+      "text": "Impeccable design and incredible support. Our online sales grew 180% in 3 months."
+    }
+  },
+  "whatsappCta": {
+    "title": "Want real numbers? Let's talk today.",
+    "subtitle": "Tell us about your business and we'll create an express proposal.",
+    "ctaPrimary": "Chat on WhatsApp",
+    "ctaSecondary": "Or schedule a 15-minute call"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "We answer your most common questions",
+    "q1": {
+      "question": "How long does a project take?",
+      "answer": "It depends on the scope, but a standard website takes 2-4 weeks. Simple landing pages can be ready in 5-7 days."
+    },
+    "q2": {
+      "question": "Costs and payment methods?",
+      "answer": "We offer personalized quotes according to your needs. We accept payments in phases: 50% at start, 50% at completion."
+    },
+    "q3": {
+      "question": "Maintenance and support?",
+      "answer": "We include 30 days of free post-launch support. After that, we offer monthly maintenance plans starting at $50."
+    },
+    "q4": {
+      "question": "Code ownership and hosting?",
+      "answer": "The code is 100% yours. We help you with hosting on Vercel (free) or the platform you prefer."
+    },
+    "q5": {
+      "question": "Can you migrate from Wix/WordPress?",
+      "answer": "Yes, we migrate your content to modern technologies while maintaining your SEO and significantly improving performance."
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Ready to boost your digital project?",
+      "subtitle": "Write to us on WhatsApp or discover our demos.",
+      "whatsapp": "Chat on WhatsApp",
+      "demos": "View Demos"
+    },
+    "identity": {
+      "tagline": "We create software. We build trust.",
+      "description": "Experts in web development and modern digital solutions. We create sites, apps, and experiences focused on real results for your business.",
+      "tech": "Technology: React · Next.js · Astro · Tailwind",
+      "location": "Managua, Nicaragua — we develop for all of Latin America."
+    },
+    "services": {
+      "title": "Services",
+      "react": "React Development",
+      "nextjs": "Next.js Sites (SSR/SSG)",
+      "tailwind": "Tailwind Design",
+      "astro": "Astro Landing Pages",
+      "support": "Support & Maintenance",
+      "tagline": "We build fast, secure interfaces made to scale your business."
+    },
+    "company": {
+      "title": "Company",
+      "about": "About Us",
+      "cases": "Success Stories",
+      "demos": "Demos",
+      "resources": "Resources",
+      "tagline": "KodeWave Solutions combines design, performance, and digital strategy to deliver measurable results."
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help Center",
+      "docs": "Documentation",
+      "contact": "Contact",
+      "status": "Service Status",
+      "tagline": "We support every project before, during, and after launch."
+    },
+    "social": {
+      "title": "Connect with us",
+      "subtitle": "Follow us and stay up to date with the latest ideas, projects, and launches."
+    },
+    "legal": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookies",
+      "copyright": "© 2025 KodeWave Solutions — All rights reserved.",
+      "madeWith": "Developed with ❤️ in Managua, Nicaragua."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Let's talk about your future website",
+      "subtitle": "Do you have a project in mind? We would love to hear your ideas and help you turn them into an amazing digital experience."
+    },
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Fill out the form below and we will get back to you as soon as possible.",
+      "name": "Name *",
+      "company": "Company",
+      "email": "Email *",
+      "phone": "Phone number *",
+      "subject": "Subject *",
+      "message": "Message *",
+      "messagePlaceholder": "Write your message here...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "✅ Your message has been sent successfully"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Feel free to reach out to us through any of the following methods.",
+      "email": "Contact Email",
+      "phone": "Phone number",
+      "location": "Location",
+      "hours": "Business Hours",
+      "schedule": "Mon - Fri: 9:00 - 18:00"
+    },
+    "cta": {
+      "title": "Immediate Assistance",
+      "subtitle": "For urgent inquiries, feel free to reach out via WhatsApp or give us a call.",
+      "callNow": "Call Now"
+    }
+  }
+}

@@ -1,223 +1,245 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import type React from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ChevronDown } from "lucide-react"
+import { Menu, X, ArrowRight, Phone } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { useTranslation } from "@/lib/i18n/context"
+import { useRouter, usePathname } from "next/navigation"
+import { LanguageSwitcher } from "./language-switcher"
 
 export function Header() {
+  const { t } = useTranslation()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const menuRef = useRef<HTMLDivElement>(null)
+  const router = useRouter()
+  const pathname = usePathname()
 
+  // Detectar scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+    const handleScroll = () => setIsScrolled(window.scrollY > 10)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const servicesMenu = {
-    consultoria: {
-      title: "CONSULTORÍA",
-      icon: "👥",
-      items: [
-        { name: "Procesos LEAN", href: "/servicios/consultoria/procesos-lean" },
-        { name: "Planes de Igualdad", href: "/servicios/consultoria/planes-igualdad" },
-        { name: "Transformación Digital", href: "/servicios/consultoria/transformacion-digital" },
-        { name: "Gestión de personas", href: "/servicios/consultoria/gestion-personas" },
-      ],
-    },
-    sistemasIt: {
-      title: "SISTEMAS IT",
-      icon: "💻",
-      items: [
-        { name: "Microsoft 365", href: "/servicios/sistemas-it/microsoft-365" },
-        { name: "Microsoft Azure", href: "/servicios/sistemas-it/microsoft-azure" },
-        { name: "Smart Workplace", href: "/servicios/sistemas-it/smart-workplace" },
-      ],
-    },
-    negocio: {
-      title: "NEGOCIO",
-      icon: "📊",
-      items: [
-        { name: "Dynamics 365", href: "/servicios/negocio/dynamics-365" },
-        { name: "Sage ERP", href: "/servicios/negocio/sage-erp" },
-        { name: "Salesforce", href: "/servicios/negocio/salesforce" },
-      ],
-    },
-    dataServices: {
-      title: "DATA SERVICES",
-      icon: "🗄️",
-      items: [
-        { name: "Inteligencia Artificial", href: "/servicios/data-services/inteligencia-artificial" },
-        { name: "Power BI", href: "/servicios/data-services/power-bi" },
-        { name: "IoT", href: "/servicios/data-services/iot" },
-      ],
-    },
-    desarrolloSoftware: {
-      title: "DESARROLLO SOFTWARE",
-      icon: "⚡",
-      items: [
-        { name: "DevOps", href: "/servicios/desarrollo-software/devops" },
-        { name: "SharePoint", href: "/servicios/desarrollo-software/sharepoint" },
-        { name: "Power Platform", href: "/servicios/desarrollo-software/power-platform" },
-      ],
-    },
+  // Bloquear scroll al abrir menú
+  useEffect(() => {
+    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "unset"
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isMobileMenuOpen])
+
+  // Cerrar si se hace clic fuera del menú
+  useEffect(() => {
+    if (!isMobileMenuOpen) return
+    const handleClickOutside = (e: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [isMobileMenuOpen])
+
+  // Función: ir al inicio o a una sección específica
+  const handleNavigation = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    setIsMobileMenuOpen(false)
+
+    const isHome = pathname === "/"
+    const targetId = href.replace("#", "")
+
+    if (isHome) {
+      const target = document.getElementById(targetId)
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" })
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+      }
+    } else {
+      router.push(`/${href}`)
+    }
   }
 
+  // Click en el logo
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    } else {
+      router.push("/")
+    }
+  }
+
+  const whatsappUrl =
+    "https://wa.me/50582851270?text=Hola%20KodeWave%2C%20vi%20su%20sitio.%20Quiero%20una%20web%20para%20mi%20negocio."
+
+  const menuItems = [
+    { href: "#servicios", label: t("navbar.services"), icon: ArrowRight },
+    { href: "#casos", label: t("navbar.cases"), icon: ArrowRight },
+    { href: "#demos", label: t("navbar.demos"), icon: ArrowRight },
+    { href: "#recursos", label: t("navbar.resources"), icon: ArrowRight },
+    { href: "#nosotros", label: t("navbar.about"), icon: ArrowRight },
+    { href: "#faq", label: t("navbar.faq"), icon: ArrowRight },
+  ]
+
   return (
-    <header className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-sm">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="hidden md:flex justify-end items-center py-2 text-sm">
-          <div className="flex items-center space-x-4">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-white/80 hover:text-white border border-white/30 rounded-full px-4 py-1 text-xs"
-            >
-              Prensa
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-white/80 hover:text-white border border-white/30 rounded-full px-4 py-1 text-xs"
-            >
-              Blog
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-white/80 hover:text-white border border-white/30 rounded-full px-4 py-1 text-xs"
-            >
-              Tu cuenta
-            </Button>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-white/80 hover:text-white border border-white/30 rounded-full px-4 py-1 text-xs"
-            >
-              Únete a Nosotros
-            </Button>
-            <div className="text-white/80 text-xs">EN / ES</div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between h-16 border-t border-white/10">
-          <div className="flex-shrink-0 flex items-center">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="relative w-12 h-8">
-                <Image src="/kodeLogo.png" alt="KODEWAVE SOLUTIONS Logo" fill className="object-contain" />
-              </div>
-              <div className="text-white">
-                <div className="font-bold text-lg">KODEWAVE SOLUTIONS</div>
-                <div className="text-xs text-white/60">CREAMOS SOFTWARE. CONSTRUIMOS CONFIANZA.</div>
-              </div>
-            </Link>
-          </div>
-
-          <nav className="hidden md:block">
-            <div className="flex items-center space-x-8">
-              <div className="relative group">
-                <button className="text-white hover:text-cyan-400 transition-colors font-medium flex items-center">
-                  Servicios
-                  <ChevronDown className="ml-1 h-4 w-4" />
-                </button>
-
-                <div className="absolute top-full left-0 mt-2 w-[800px] bg-white rounded-lg shadow-xl border border-gray-200 p-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
-                  <div className="grid grid-cols-5 gap-6">
-                    {Object.entries(servicesMenu).map(([key, category]) => (
-                      <div key={key} className="space-y-3">
-                        <div className="flex items-center space-x-2 mb-3">
-                          <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-lg">
-                            {category.icon}
-                          </div>
-                        </div>
-                        <h3 className="font-bold text-sm text-gray-900 mb-2">{category.title}</h3>
-                        <ul className="space-y-2">
-                          {category.items.map((item, index) => (
-                            <li key={index}>
-                              <Link
-                                href={item.href}
-                                className="text-sm text-gray-600 hover:text-cyan-600 transition-colors block"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              <a href="#experiencia" className="text-white hover:text-cyan-400 transition-colors font-medium">
-                Experiencia
-              </a>
-              <a href="#conoce-integra" className="text-white hover:text-cyan-400 transition-colors font-medium">
-                Conoce Integra
-              </a>
-              <a href="#eventos" className="text-white hover:text-cyan-400 transition-colors font-medium">
-                Eventos
-              </a>
-              <a href="#recursos" className="text-white hover:text-cyan-400 transition-colors font-medium">
-                Recursos
-              </a>
+    <>
+      {/* HEADER PRINCIPAL */}
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ease-out backdrop-blur-md ${
+          isScrolled
+            ? "bg-[#021B33]/90 shadow-[0_2px_20px_rgba(0,0,0,0.3)]"
+            : "bg-gradient-to-r from-[#021B33] to-[#03284A] shadow-[0_2px_15px_rgba(0,0,0,0.25)]"
+        }`}
+      >
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 h-[86px] flex items-center justify-between">
+          {/* LOGO */}
+          <a href="/" onClick={handleLogoClick} className="flex items-center gap-2 cursor-pointer">
+            <div className="relative w-[180px] sm:w-[220px] md:w-[240px] lg:w-[260px] xl:w-[280px] transition-all duration-300 ease-out hover:scale-[1.03]">
+              <Image
+                src="/logoEmpresa.png"
+                alt="KodeWave Solutions"
+                width={280}
+                height={60}
+                className="object-contain drop-shadow-[0_2px_10px_rgba(0,200,255,0.25)]"
+                priority
+              />
             </div>
+          </a>
+
+          {/* NAV DESKTOP */}
+          <nav className="hidden lg:flex items-center space-x-10">
+            {menuItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={(e) => handleNavigation(e, item.href)}
+                className="text-white/90 hover:text-[#00C8FF] font-medium text-[15px] transition-all duration-200 relative group"
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#00C8FF] transition-all duration-200 ease-out group-hover:w-full"></span>
+              </a>
+            ))}
           </nav>
 
-          <div className="md:hidden">
+          {/* BOTONES DESKTOP */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher />
             <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white"
+              asChild
+              variant="outline"
+              size="default"
+              className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold px-5 text-[15px] transition-all duration-200"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              <Link href="/contacto">
+                {t("navbar.contact")}
+              </Link>
+            </Button>
+            <Button
+              asChild
+              size="default"
+              className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-bold px-5 shadow-lg hover:shadow-cyan-500/40 transition-all duration-200"
+            >
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                {t("navbar.whatsapp")}
+              </a>
             </Button>
           </div>
-        </div>
 
-        {isMobileMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/80 border-t border-white/10">
-              <div className="space-y-2">
-                <div className="px-3 py-2 text-white font-medium">Servicios</div>
-                {Object.entries(servicesMenu).map(([key, category]) => (
-                  <div key={key} className="pl-6 space-y-1">
-                    <div className="text-cyan-400 text-sm font-medium">{category.title}</div>
-                    {category.items.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.href}
-                        className="block pl-4 py-1 text-sm text-white/80 hover:text-cyan-400"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+          {/* MENÚ MÓVIL BOTÓN */}
+          <div className="lg:hidden flex items-center">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-3 rounded-lg text-white hover:bg-cyan-500/20 transition-all duration-300"
+              aria-label="Abrir menú"
+            >
+              {isMobileMenuOpen ? (
+                <X className="h-8 w-8 transition-transform duration-300 rotate-90" />
+              ) : (
+                <Menu className="h-8 w-8 transition-transform duration-300" />
+              )}
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* MENÚ MÓVIL */}
+      {isMobileMenuOpen && (
+        <div className="fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-sm">
+          <div
+            ref={menuRef}
+            className="relative w-[85%] max-w-[420px] h-full bg-gradient-to-br from-[#03284A]/95 via-[#045b83]/90 to-[#021B33]/95
+            backdrop-blur-2xl border-l border-cyan-400/20 shadow-[0_8px_40px_rgba(0,200,255,0.15)]
+            animate-[slideInFromRight_0.4s_cubic-bezier(0.16,1,0.3,1)_forwards]
+            rounded-l-3xl overflow-hidden"
+          >
+            {/* ENCABEZADO */}
+            <div className="flex justify-between items-center px-6 py-5 border-b border-white/10">
+              <Image
+                src="/logoEmpresa.png"
+                alt="KodeWave"
+                width={150}
+                height={40}
+                className="object-contain drop-shadow-[0_2px_6px_rgba(0,200,255,0.35)]"
+              />
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="p-2 rounded-full text-white hover:text-cyan-400 hover:bg-cyan-500/10 transition-all duration-300"
+              >
+                <X className="h-7 w-7" />
+              </button>
+            </div>
+
+            {/* ITEMS */}
+            <nav className="flex flex-col space-y-4 mt-6 px-6 pb-4">
+              {menuItems.map((item, index) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  onClick={(e) => handleNavigation(e, item.href)}
+                  style={{ animationDelay: `${index * 80}ms` }}
+                  className="group flex items-center justify-between py-4 px-5 text-white/90 text-base font-semibold rounded-2xl
+                    border border-white/[0.06] bg-gradient-to-r from-white/[0.05] to-white/[0.02]
+                    hover:from-cyan-500/10 hover:to-cyan-400/5 backdrop-blur-sm hover:border-cyan-400/40
+                    hover:shadow-[0_8px_20px_rgba(0,200,255,0.2)]
+                    transition-all duration-300 ease-out animate-[slideUpFade_0.5s_cubic-bezier(0.16,1,0.3,1)_forwards]"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-cyan-500/10 flex items-center justify-center border border-cyan-400/30">
+                      <item.icon className="h-4 w-4 text-cyan-400 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300" />
+                    </div>
+                    <span className="group-hover:text-white transition-all">{item.label}</span>
                   </div>
-                ))}
-              </div>
-              <a href="#experiencia" className="block px-3 py-2 text-white hover:text-cyan-400">
-                Experiencia
-              </a>
-              <a href="#conoce-integra" className="block px-3 py-2 text-white hover:text-cyan-400">
-                Conoce Integra
-              </a>
-              <a href="#eventos" className="block px-3 py-2 text-white hover:text-cyan-400">
-                Eventos
-              </a>
-              <a href="#recursos" className="block px-3 py-2 text-white hover:text-cyan-400">
-                Recursos
-              </a>
+                  <ArrowRight className="h-4 w-4 text-cyan-400 opacity-0 translate-x-[-8px] group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                </a>
+              ))}
+            </nav>
+
+            {/* FOOTER */}
+            <div className="mt-auto px-6 pt-4 pb-8 border-t border-white/10 space-y-4">
+              <LanguageSwitcher />
+              <Button
+                asChild
+                className="w-full bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700
+                text-white font-bold py-5 rounded-2xl shadow-[0_6px_20px_rgba(6,182,212,0.3)] hover:scale-[1.02] transition-all duration-300"
+              >
+                <Link href="/contacto" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Phone className="h-5 w-5 mr-2" /> {t("navbar.contact")}
+                </Link>
+              </Button>
+              <p className="text-center text-white/50 text-xs tracking-wide pt-2">
+                © {new Date().getFullYear()}{" "}
+                <span className="text-cyan-400 font-semibold">KodeWave</span> – Innovación con propósito
+              </p>
             </div>
           </div>
-        )}
-      </div>
-    </header>
+        </div>
+      )}
+    </>
   )
 }

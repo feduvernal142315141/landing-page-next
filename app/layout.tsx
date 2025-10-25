@@ -1,61 +1,15 @@
+import type React from "react";
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
+import { I18nProvider } from "@/lib/i18n/context";
 
 export const metadata: Metadata = {
-  title: {
-    default: "KodeWave Solutions | Desarrollo Web y Software Profesional",
-    template: "%s | KodeWave Solutions",
-  },
+  title: "KodeWave Solutions | Desarrollo Web Profesional",
   description:
-    "Desarrollamos sitios web, sistemas y software a medida para empresas en Nicaragua y Centroamérica. Potencia tu negocio con soluciones digitales innovadoras.",
-  keywords: [
-    "desarrollo web",
-    "software",
-    "Managua",
-    "Nicaragua",
-    "KodeWave",
-    "sistemas",
-    "aplicaciones",
-    "diseño web",
-    "programación",
-    "soluciones digitales",
-  ],
-  authors: [{ name: "KodeWave Solutions S.A." }],
-  creator: "KodeWave Solutions S.A.",
-  publisher: "KodeWave Solutions S.A.",
-  metadataBase: new URL("https://www.kodewave-solutions.com"),
-  openGraph: {
-    title: "KodeWave Solutions | Desarrollo Web y Software Profesional",
-    description:
-      "Soluciones digitales innovadoras en Nicaragua y Centroamérica.",
-    url: "https://www.kodewave-solutions.com/",
-    siteName: "KodeWave Solutions",
-    locale: "es_NI",
-    type: "website",
-    images: [
-      {
-        url: "https://www.kodewave-solutions.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "KodeWave Solutions",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://www.kodewave-solutions.com/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-  category: "Tecnología",
+    "Expertos en desarrollo web y soluciones digitales modernas. Creamos sitios, apps y experiencias enfocadas en resultados reales para tu negocio.",
+  generator: "kodewave.app",
 };
 
 export default function RootLayout({
@@ -64,10 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
-        {children}
-        <Analytics />
+    <html lang="es" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="antialiased">
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

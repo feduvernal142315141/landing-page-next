@@ -1,0 +1,424 @@
+{
+  "navbar": {
+    "services": "Servicios",
+    "cases": "Casos",
+    "demos": "Demos",
+    "resources": "Recursos",
+    "about": "Nosotros",
+    "faq": "FAQ",
+    "call": "Llamada",
+    "whatsapp": "WhatsApp",
+    "menu": "Menú",
+    "language": "Idioma",
+    "poweredBy": "Impulsado por",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Expertos en Desarrollo Web que convierten",
+    "subtitle": "Sitios y apps a medida con foco en negocio, rendimiento y experiencia de usuario.",
+    "ctaPrimary": "Hablemos de tu proyecto",
+    "ctaSecondary": "Ver demos en 1 minuto",
+    "feature1": "Entrega puntual",
+    "feature2": "Soporte cercano",
+    "feature3": "React • Next.js • Tailwind"
+  },
+  "trustBar": {
+    "title": "Tecnologías en las que confiamos"
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Soluciones que cargan rápido y venden más",
+    "custom": {
+      "title": "Sitios a medida con Next.js",
+      "description": "Desarrollo personalizado con las últimas tecnologías",
+      "bullet1": "Arquitectura escalable",
+      "bullet2": "SEO optimizado"
+    },
+    "ecommerce": {
+      "title": "Tiendas y catálogos con integración WhatsApp",
+      "description": "Soluciones de comercio electrónico conectadas",
+      "bullet1": "Checkout simplificado",
+      "bullet2": "Integración WhatsApp"
+    },
+    "landing": {
+      "title": "Landing pages de alto rendimiento",
+      "description": "Páginas optimizadas para conversión",
+      "bullet1": "Carga ultrarrápida",
+      "bullet2": "Diseño persuasivo"
+    },
+    "apps": {
+      "title": "Apps web internas (dashboards/CRM)",
+      "description": "Herramientas empresariales a medida",
+      "bullet1": "Interfaces intuitivas",
+      "bullet2": "Datos en tiempo real"
+    },
+    "branding": {
+      "title": "Branding y UI/UX",
+      "description": "Diseño de marca y experiencia de usuario",
+      "bullet1": "Identidad visual",
+      "bullet2": "Experiencia memorable"
+    },
+    "support": {
+      "title": "Soporte y mantenimiento",
+      "description": "Acompañamiento continuo para tu proyecto",
+      "bullet1": "Actualizaciones regulares",
+      "bullet2": "Soporte prioritario"
+    },
+    "cta": "Solicitar cotización por WhatsApp"
+  },
+  "features": {
+    "title": "EXPERTOS EN DESARROLLO WEB A MEDIDA",
+    "description": "¿Tu sitio web refleja realmente lo que tu negocio necesita? En KodeWave creamos soluciones web modernas y personalizadas que se adaptan a tus objetivos. Usamos tecnologías como React.js, Next.js, Astro y muchas más para ofrecer experiencias rápidas, escalables y fáciles de mantener.",
+    "contactButton": "Contáctanos con nosotros",
+    "questionTitle": "¿QUÉ TIPO DE DESARROLLO WEB NECESITAS?",
+    "react": {
+      "title": "Aplicaciones modernas con React",
+      "description": "Creamos interfaces interactivas y dinámicas con React, la biblioteca más popular para desarrollo web moderno.",
+      "benefit1": "Componentes reutilizables",
+      "benefit2": "Rendimiento optimizado",
+      "benefit3": "Ecosistema robusto",
+      "cta": "Quiero una app moderna con React"
+    },
+    "nextjs": {
+      "title": "Sitios rápidos con Next.js",
+      "description": "Desarrollamos sitios web ultrarrápidos con Next.js, el framework de React para producción.",
+      "benefit1": "SEO optimizado",
+      "benefit2": "Carga instantánea",
+      "benefit3": "Escalabilidad garantizada",
+      "cta": "Quiero un sitio rápido con Next.js"
+    },
+    "astro": {
+      "title": "Webs ligeras con Astro",
+      "description": "Construimos sitios web extremadamente rápidos con Astro, el framework moderno para contenido.",
+      "benefit1": "Carga ultrarrápida",
+      "benefit2": "SEO excepcional",
+      "benefit3": "Menos JavaScript",
+      "cta": "Quiero una web ligera con Astro"
+    },
+    "tailwind": {
+      "title": "Diseño moderno con Tailwind CSS",
+      "description": "Diseñamos interfaces elegantes y responsivas con Tailwind CSS, el framework de utilidades más popular.",
+      "benefit1": "Diseño consistente",
+      "benefit2": "Desarrollo ágil",
+      "benefit3": "Totalmente personalizable",
+      "cta": "Quiero un diseño moderno con Tailwind"
+    }
+  },
+  "projectPhases": {
+    "title": "Fases del proyecto web",
+    "subtitle": "Un proceso simple, resultados sólidos",
+    "phase1": {
+      "title": "Descubrimiento",
+      "description": "30 min por WhatsApp o call para entender tu negocio y objetivos"
+    },
+    "phase2": {
+      "title": "Propuesta y roadmap",
+      "description": "Roadmap detallado y presupuesto en 24-48 horas"
+    },
+    "phase3": {
+      "title": "Diseño + Desarrollo",
+      "description": "Iteraciones cortas con feedback continuo y entregas parciales"
+    },
+    "phase4": {
+      "title": "Entrega + Métricas + Soporte",
+      "description": "Lanzamiento optimizado con seguimiento de resultados y soporte continuo"
+    },
+    "phase5": {
+      "title": "Optimización Mobile",
+      "description": "Diseño responsive perfecto en todos los dispositivos"
+    },
+    "phase6": {
+      "title": "Seguridad y Performance",
+      "description": "Auditoría completa de seguridad y optimización de velocidad"
+    },
+    "phase7": {
+      "title": "Mantenimiento Continuo",
+      "description": "Actualizaciones regulares y soporte técnico permanente"
+    }
+  },
+  "casos": {
+    "title": "Casos de Éxito: Resultados que hablan por sí solos",
+    "subtitle": "Cada proyecto es una historia distinta. Estas son algunas empresas y profesionales que confiaron en KodeWave para transformar su presencia digital.",
+    "category": {
+      "health": "Salud",
+      "ecommerce": "E-commerce",
+      "services": "Servicios"
+    },
+    "dental": {
+      "name": "Clínica Dental SmileCare",
+      "challenge": "Necesitaban una web más rápida y fácil de usar para aumentar las citas online.",
+      "solution": "Migramos a Next.js y optimizamos SEO local con schema markup y contenido estratégico.",
+      "result": "+42% leads",
+      "metric1": "LCP 1.8s",
+      "metric2": "PageSpeed 98",
+      "metric3": "+42% conversiones"
+    },
+    "electronics": {
+      "name": "Tienda Electro Plus",
+      "challenge": "Carrito abandonado alto y experiencia de compra confusa en mobile.",
+      "solution": "Rediseñamos el flujo de checkout, integramos WhatsApp y optimizamos imágenes.",
+      "result": "+63% ventas",
+      "metric1": "-35% abandono",
+      "metric2": "Mobile-first",
+      "metric3": "+63% conversiones"
+    },
+    "law": {
+      "name": "Consultoría Legal Martínez",
+      "challenge": "Sitio desactualizado que no generaba confianza ni consultas.",
+      "solution": "Landing profesional con casos de éxito, testimonios verificados y formulario optimizado.",
+      "result": "+78% consultas",
+      "metric1": "Bounce -45%",
+      "metric2": "Tiempo +2.3min",
+      "metric3": "+78% leads"
+    },
+    "ctaQuestion": "¿Quieres resultados como estos para tu negocio?",
+    "ctaButton": "Conversemos sobre tu proyecto",
+    "requestSimilar": "Pedir similar",
+    "viewDetails": "Ver detalles"
+  },
+  "demos": {
+    "title": "Demos Interactivas: Diseños listos para inspirarte",
+    "subtitle": "Explora nuestros sitios base para diferentes tipos de negocio. Si uno encaja contigo, lo adaptamos a tu marca en pocos días.",
+    "categories": {
+      "all": "Todos",
+      "pymes": "PYMEs",
+      "clinics": "Clínicas",
+      "professionals": "Profesionales",
+      "stores": "Tiendas",
+      "startups": "Startups",
+      "education": "Educación"
+    },
+    "items": {
+      "dental": "Landing para Clínica Dental",
+      "electronics": "Tienda de Electrónicos",
+      "lawyer": "Landing de Consultor Legal",
+      "restaurant": "Sitio para Restaurante",
+      "saas": "Landing para Startup SaaS",
+      "stores": "Tienda Online de Electrodomésticos",
+      "education": "Academia de Taekwondo",
+      "professionals": "Landing para Profesional Independiente"
+    },
+    "viewDemo": "Ver Demo en Vivo",
+    "requestDesign": "Pedir este diseño",
+    "ctaQuestion": "¿No encuentras lo que buscas? Creamos diseños personalizados.",
+    "ctaButton": "Solicitar diseño personalizado"
+  },
+  "recursos": {
+    "title": "Recursos y Guías para Impulsar tu Negocio Digital",
+    "subtitle": "Aprende sobre desarrollo, diseño, marketing digital y herramientas modernas. Creemos que el conocimiento compartido construye confianza.",
+    "types": {
+      "article": "Artículo",
+      "guide": "Guía",
+      "download": "Descargable"
+    },
+    "article1": {
+      "title": "Por qué tu web debe cargar en menos de 2 segundos",
+      "description": "Descubre cómo la velocidad impacta conversiones y SEO, con ejemplos reales y herramientas.",
+      "time": "5 min"
+    },
+    "article2": {
+      "title": "Cómo conectar WhatsApp Business con tu landing",
+      "description": "Paso a paso para integrar WhatsApp y aumentar tus leads calientes desde el primer día.",
+      "time": "8 min"
+    },
+    "article3": {
+      "title": "Checklist: Lanzamiento de sitio web profesional",
+      "description": "PDF gratuito con 47 puntos de verificación antes de publicar tu web.",
+      "time": "PDF"
+    },
+    "readNow": "Leer ahora",
+    "downloadFree": "Descargar gratis",
+    "newsletter": {
+      "title": "Recibe consejos mensuales para mejorar tu web",
+      "subtitle": "Únete a nuestra newsletter y recibe guías exclusivas, casos de estudio y tips de desarrollo web directo en tu inbox.",
+      "placeholder": "tu@email.com",
+      "button": "Suscribirme"
+    }
+  },
+  "about": {
+    "title": "Somos KodeWave Solutions",
+    "subtitle": "Creamos software, construimos confianza. Nuestra misión es que cada negocio, sin importar su tamaño, tenga una presencia digital que inspire, venda y evolucione.",
+    "vision": {
+      "title": "Nuestra Visión",
+      "paragraph1": "Ayudamos a emprendedores, clínicas y empresas a transformar sus ideas en soluciones digitales funcionales. Nos enfocamos en la calidad técnica, la experiencia del usuario y el impacto real en cada proyecto.",
+      "paragraph2": "No vendemos plantillas genéricas. Cada proyecto es único, diseñado y desarrollado específicamente para los objetivos de tu negocio."
+    },
+    "values": {
+      "transparency": {
+        "title": "Transparencia",
+        "description": "Comunicación clara en cada etapa del proyecto"
+      },
+      "efficiency": {
+        "title": "Eficiencia",
+        "description": "Entregamos resultados rápidos sin sacrificar calidad"
+      },
+      "purpose": {
+        "title": "Diseño con propósito",
+        "description": "Cada pixel tiene una razón de ser"
+      },
+      "support": {
+        "title": "Soporte continuo",
+        "description": "Estamos contigo después del lanzamiento"
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "member1": {
+        "name": "Frank Hernández",
+        "role": "Director Técnico / Desarrollador Senior",
+        "specialty": "Especialista en React, Next.js y arquitecturas escalables"
+      },
+      "member2": {
+        "name": "María González",
+        "role": "Diseñadora UX/UI Lead",
+        "specialty": "Experta en diseño centrado en usuario y conversión"
+      },
+      "member3": {
+        "name": "Carlos Ramírez",
+        "role": "Desarrollador Full Stack",
+        "specialty": "Especialista en APIs, bases de datos y optimización"
+      }
+    },
+    "cta": {
+      "title": "¿Quieres trabajar con nosotros?",
+      "subtitle": "Estamos listos para escuchar tu proyecto y ayudarte a convertirlo en realidad. Sin compromisos, sin presión.",
+      "whatsapp": "Hablemos por WhatsApp",
+      "call": "Agenda una llamada de 15 minutos"
+    },
+    "ctaButton": "Conversemos sobre tu idea"
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Resultados reales de negocios reales",
+    "verified": "Verificado",
+    "testimonial1": {
+      "name": "María González",
+      "role": "CEO, TechStart",
+      "text": "Pasamos de un sitio lento a una landing que convirtió 2.3× más en 30 días. El equipo es excepcional."
+    },
+    "testimonial2": {
+      "name": "Carlos Ruiz",
+      "role": "Director, Clínica Salud",
+      "text": "La integración con WhatsApp cambió nuestro negocio. Ahora recibimos consultas 24/7 de forma automática."
+    },
+    "testimonial3": {
+      "name": "Ana Martínez",
+      "role": "Fundadora, Boutique Online",
+      "text": "Diseño impecable y soporte increíble. Nuestras ventas online crecieron un 180% en 3 meses."
+    }
+  },
+  "whatsappCta": {
+    "title": "¿Quieres números reales? Conversemos hoy.",
+    "subtitle": "Cuéntanos tu negocio y armamos una propuesta express.",
+    "ctaPrimary": "Chatear por WhatsApp",
+    "ctaSecondary": "O agenda una llamada de 15 minutos"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Resolvemos tus dudas más comunes",
+    "q1": {
+      "question": "¿Cuánto tarda un proyecto?",
+      "answer": "Depende del alcance, pero un sitio web estándar toma entre 2-4 semanas. Landing pages simples pueden estar listas en 5-7 días."
+    },
+    "q2": {
+      "question": "¿Costos y formas de pago?",
+      "answer": "Ofrecemos presupuestos personalizados según tus necesidades. Aceptamos pagos en fases: 50% al inicio, 50% al finalizar."
+    },
+    "q3": {
+      "question": "¿Mantenimiento y soporte?",
+      "answer": "Incluimos 30 días de soporte gratuito post-lanzamiento. Después, ofrecemos planes de mantenimiento mensuales desde $50."
+    },
+    "q4": {
+      "question": "¿Propiedad del código y hosting?",
+      "answer": "El código es 100% tuyo. Te ayudamos con el hosting en Vercel (gratis) o la plataforma que prefieras."
+    },
+    "q5": {
+      "question": "¿Pueden migrar desde Wix/WordPress?",
+      "answer": "Sí, migramos tu contenido a tecnologías modernas manteniendo tu SEO y mejorando el rendimiento significativamente."
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "¿Listo para impulsar tu proyecto digital?",
+      "subtitle": "Escríbenos por WhatsApp o descubre nuestros demos.",
+      "whatsapp": "Chatear por WhatsApp",
+      "demos": "Ver Demos"
+    },
+    "identity": {
+      "tagline": "Creamos software. Construimos confianza.",
+      "description": "Expertos en desarrollo web y soluciones digitales modernas. Creamos sitios, apps y experiencias enfocadas en resultados reales para tu negocio.",
+      "tech": "Tecnología: React · Next.js · Astro · Tailwind",
+      "location": "Managua, Nicaragua — desarrollamos para toda Latinoamérica."
+    },
+    "services": {
+      "title": "Servicios",
+      "react": "Desarrollo React",
+      "nextjs": "Sitios Next.js (SSR/SSG)",
+      "tailwind": "Diseño con Tailwind",
+      "astro": "Landing Pages Astro",
+      "support": "Soporte & Mantenimiento",
+      "tagline": "Construimos interfaces rápidas, seguras y hechas para escalar tu negocio."
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nosotros",
+      "cases": "Casos de Éxito",
+      "demos": "Demos",
+      "resources": "Recursos",
+      "tagline": "KodeWave Solutions combina diseño, rendimiento y estrategia digital para ofrecer resultados medibles."
+    },
+    "support": {
+      "title": "Soporte",
+      "help": "Centro de Ayuda",
+      "docs": "Documentación",
+      "contact": "Contacto",
+      "status": "Estado del Servicio",
+      "tagline": "Acompañamos cada proyecto antes, durante y después de su lanzamiento."
+    },
+    "social": {
+      "title": "Conecta con nosotros",
+      "subtitle": "Síguenos y mantente al día con las últimas ideas, proyectos y lanzamientos."
+    },
+    "legal": {
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad",
+      "cookies": "Cookies",
+      "copyright": "© 2025 KodeWave Solutions — Todos los derechos reservados.",
+      "madeWith": "Desarrollado con ❤️ en Managua, Nicaragua."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Hablemos de tu futura web",
+      "subtitle": "¿Tienes un proyecto en mente? Nos encantaría conocer tus ideas y ayudarte a convertirlas en una experiencia digital increíble."
+    },
+    "form": {
+      "title": "Envíanos un mensaje",
+      "subtitle": "Completa el formulario, te contactaremos en menos de 24 h.",
+      "name": "Nombre *",
+      "company": "Empresa",
+      "email": "Email *",
+      "phone": "Teléfono",
+      "subject": "Asunto *",
+      "message": "Mensaje *",
+      "messagePlaceholder": "Cuéntanos más detalles sobre tu proyecto...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "✅ Tu mensaje ha sido enviado con éxito"
+    },
+    "info": {
+      "title": "Información de contacto",
+      "subtitle": "Estamos aquí para ayudarte. Contáctanos a través de cualquiera de estos medios.",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "hours": "Horario",
+      "schedule": "Lun - Vie: 9:00 - 18:00"
+    },
+    "cta": {
+      "title": "¿Necesitas una respuesta rápida?",
+      "subtitle": "Para consultas urgentes, llámanos directamente y te atenderemos de inmediato.",
+      "callNow": "Llamar ahora"
+    }
+  }
+}
