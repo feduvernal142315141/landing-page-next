@@ -41,11 +41,11 @@ export function DemosSection() {
     },
     {
       id: 3,
-      titulo: t("demos.items.saas"),
-      categoria: "startups",
+      titulo: t("demos.items.lexManagua"),
+      categoria: "professionals",
       stack: ["Next.js", "Framer Motion", "Vercel"],
-      imagen: "/saas-startup-landing-page.jpg",
-      demoUrl: "#",
+      imagen: "/lex-managua.jpg",
+      demoUrl: "https://lex-managua.vercel.app/",
     },
     {
       id: 4,
