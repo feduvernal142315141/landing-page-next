@@ -52,7 +52,7 @@ export function ServicesSection() {
     },
   ]
 
-  const whatsappUrl = "https://wa.me/50582851270?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n"
+  const whatsappUrl = "https://wa.me/50586787795?text=Hola%2C%20quiero%20solicitar%20una%20cotizaci%C3%B3n"
 
   return (
     <section id="servicios" className="py-20 bg-white">

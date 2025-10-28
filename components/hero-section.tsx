@@ -15,7 +15,7 @@ export function HeroSection() {
   }, [])
 
   const whatsappUrl =
-    "https://wa.me/50582851270?text=Hola%20KodeWave%2C%20vi%20su%20sitio.%20Quiero%20una%20web%20para%20mi%20negocio.%20%C2%BFDisponibilidad%20esta%20semana%3F"
+    "https://wa.me/50586787795?text=Hola%20KodeWave%2C%20vi%20su%20sitio.%20Quiero%20una%20web%20para%20mi%20negocio.%20%C2%BFDisponibilidad%20esta%20semana%3F"
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

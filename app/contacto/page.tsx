@@ -167,7 +167,7 @@ export default function ContactoPage() {
                 asChild
                 className="bg-white text-cyan-700 hover:bg-slate-100 font-bold py-5 px-8 text-lg rounded-xl"
               >
-                <a href="tel:+50582851270">📞 {t("contact.cta.callNow")}</a>
+                <a href="tel:+50586787795">📞 {t("contact.cta.callNow")}</a>
               </Button>
             </div>
           </div>

@@ -76,7 +76,7 @@ export function Header() {
   }
 
   const whatsappUrl =
-    "https://wa.me/50582851270?text=Hola%20KodeWave%2C%20vi%20su%20sitio.%20Quiero%20una%20web%20para%20mi%20negocio."
+    "https://wa.me/50586787795?text=Hola%20KodeWave%2C%20vi%20su%20sitio.%20Quiero%20una%20web%20para%20mi%20negocio."
 
   const menuItems = [
     { href: "#servicios", label: t("navbar.services"), icon: ArrowRight },

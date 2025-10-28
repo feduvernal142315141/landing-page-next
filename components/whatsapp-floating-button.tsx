@@ -3,7 +3,7 @@
 import { MessageCircle } from "lucide-react"
 
 export function WhatsAppFloatingButton() {
-  const whatsappUrl = "https://wa.me/50582851270?text=Hola%20KodeWave%2C%20vi%20su%20sitio%20y%20me%20interesa%20hablar."
+  const whatsappUrl = "https://wa.me/50586787795?text=Hola%20KodeWave%2C%20vi%20su%20sitio%20y%20me%20interesa%20hablar."
 
   return (
     <a

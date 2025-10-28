@@ -8,7 +8,7 @@ import { useTranslation } from "@/lib/i18n/context"
 export function WhatsAppCTASection() {
   const { t } = useTranslation()
   const whatsappUrl =
-    "https://wa.me/50582851270?text=Hola%2C%20quiero%20n%C3%BAmeros%20reales.%20Conversemos%20hoy.&utm_source=site&utm_medium=cta&utm_campaign=whatsapp-fastlane&utm_content=fastlane"
+    "https://wa.me/50586787795?text=Hola%2C%20quiero%20n%C3%BAmeros%20reales.%20Conversemos%20hoy.&utm_source=site&utm_medium=cta&utm_campaign=whatsapp-fastlane&utm_content=fastlane"
 
   return (
     <section className="py-20 bg-gradient-to-r from-cyan-500 to-cyan-600">

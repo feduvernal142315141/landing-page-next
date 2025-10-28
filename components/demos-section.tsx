@@ -76,7 +76,7 @@ export function DemosSection() {
   const demosFiltradas = categoriaActiva === "all" ? demos : demos.filter((demo) => demo.categoria === categoriaActiva)
 
   const whatsappUrl = (titulo: string) =>
-    `https://wa.me/50582851270?text=Hola%20KodeWave%2C%20me%20interesa%20el%20diseño%20"${encodeURIComponent(
+    `https://wa.me/50586787795?text=Hola%20KodeWave%2C%20me%20interesa%20el%20diseño%20"${encodeURIComponent(
       titulo
     )}".%20¿Pueden%20adaptarlo%20a%20mi%20marca?`
 
@@ -198,7 +198,7 @@ export function DemosSection() {
             className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold shadow-lg"
           >
             <a
-              href="https://wa.me/50582851270?text=Hola%20KodeWave%2C%20necesito%20un%20diseño%20personalizado%20para%20mi%20negocio."
+              href="https://wa.me/50586787795?text=Hola%20KodeWave%2C%20necesito%20un%20diseño%20personalizado%20para%20mi%20negocio."
               target="_blank"
               rel="noopener noreferrer"
             >

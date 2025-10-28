@@ -60,7 +60,7 @@ export function SobreNosotrosSection() {
   ]
 
   const whatsappUrl =
-    "https://wa.me/50582851270?text=Hola%20KodeWave%2C%20quiero%20trabajar%20con%20ustedes.%20Cuéntenme%20más%20sobre%20su%20proceso."
+    "https://wa.me/50586787795?text=Hola%20KodeWave%2C%20quiero%20trabajar%20con%20ustedes.%20Cuéntenme%20más%20sobre%20su%20proceso."
 
   return (
     <section id="nosotros" className="py-20 bg-white">

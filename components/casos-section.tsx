@@ -48,7 +48,7 @@ export function CasosSection() {
   ]
 
   const whatsappUrl = (caso: string) =>
-    `https://wa.me/50582851270?text=Hola%20KodeWave%2C%20vi%20el%20caso%20de%20${encodeURIComponent(caso)}%20y%20quiero%20algo%20similar%20para%20mi%20negocio.`
+    `https://wa.me/50586787795?text=Hola%20KodeWave%2C%20vi%20el%20caso%20de%20${encodeURIComponent(caso)}%20y%20quiero%20algo%20similar%20para%20mi%20negocio.`
 
   return (
     <section id="casos" className="py-20 bg-slate-50">
@@ -132,7 +132,7 @@ export function CasosSection() {
             className="bg-gradient-to-r from-cyan-500 to-cyan-600 hover:from-cyan-600 hover:to-cyan-700 text-white font-semibold shadow-lg"
           >
             <a
-              href="https://wa.me/50582851270?text=Hola%20KodeWave%2C%20quiero%20resultados%20como%20los%20casos%20de%20éxito%20que%20vi."
+              href="https://wa.me/50586787795?text=Hola%20KodeWave%2C%20quiero%20resultados%20como%20los%20casos%20de%20éxito%20que%20vi."
               target="_blank"
               rel="noopener noreferrer"
             >

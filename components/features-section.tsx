@@ -26,7 +26,7 @@ export function FeaturesSection() {
     return () => observer.disconnect()
   }, [])
 
-  const whatsappUrl = "https://wa.me/50582851270?text=Hola%2C%20quiero%20más%20información"
+  const whatsappUrl = "https://wa.me/50586787795?text=Hola%2C%20quiero%20más%20información"
 
   return (
     <section className="py-20 bg-gray-50">
