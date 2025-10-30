@@ -53,7 +53,7 @@ export function DemosSection() {
       categoria: "stores",
       stack: ["Next.js", "Framer Motion", "Vercel"],
       imagen: "/store-online.jpg",
-      demoUrl: "https://ecogar.vercel.app/",
+      demoUrl: "https://todohogar.vercel.app/",
     },
     {
       id: 5,
